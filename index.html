@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="profile-card">
+
+        <!-- Profile Image -->
+        <div class="image-container">
+            <img src="./Rohith Image.png" alt="My Photo">
+        </div>
+
+        <h1>Rohith Naramalla</h1>
+
+        <h3>Software Developer</h3>
+
+        <p class="intro">
+            Hello! I'm Rohith, a passionate developer who loves
+            building creative and useful applications.
+        </p>
+
+        <div class="buttons">
+            <button class="btn" onclick="showAbout()">About Me</button>
+
+            <button class="btn outline" onclick="showContact()">Contact Me</button>
+        </div>
+
+        <div id="about" class="info-box">
+
+            <h2>About Me</h2>
+
+            <p>
+                I am a Computer Science and Engineering graduate
+                with a strong interest in software development and
+                technology.
+            </p>
+
+            <p>
+                I completed my B.Tech in Computer Science and
+                Engineering from Sree Chaitanya College in 2025.
+            </p>
+
+            <h4>Education</h4>
+
+            <p>
+                🎓 B.Tech - Computer Science and Engineering
+            </p>
+
+            <h4>Technical Skills</h4>
+
+            <p>
+                Java • HTML • CSS • JavaScript • SQL
+            </p>
+
+        </div>
+
+        <div id="contact" class="info-box">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                📞 <strong>Phone:</strong>
+                <a href="tel:+919959830657">
+                    +91 9959830657
+                </a>
+            </p>
+
+            <p>
+                📧 <strong>Email:</strong>
+                <a href="mailto:rohithnaramalla3@gmail.com">
+                    rohithnaramalla3@gmail.com
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function showAbout() {
+
+            const about = document.getElementById("about");
+            const contact = document.getElementById("contact");
+
+            contact.style.display = "none";
+
+            if (about.style.display === "block") {
+                about.style.display = "none";
+            } else {
+                about.style.display = "block";
+            }
+        }
+
+
+        function showContact() {
+
+            const about = document.getElementById("about");
+            const contact = document.getElementById("contact");
+
+            about.style.display = "none";
+
+            if (contact.style.display === "block") {
+                contact.style.display = "none";
+            } else {
+                contact.style.display = "block";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
